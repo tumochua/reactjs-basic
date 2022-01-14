@@ -1,0 +1,25 @@
+.list-todo-container {
+    .add-todo {
+        button {
+            margin : 10px;
+            cursor : pointer;
+            opacity: 0.9;
+        }
+
+    }
+
+    .list-todo-content {
+        margin: 20px;
+
+        .todo-child {
+            button {
+                cursor : pointer;
+                opacity: 0.9;
+            }
+
+            .edit-list-todo {
+                margin: 10px;
+            }
+        }
+    }
+}

@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.scss';
+import MyCommponent from './Example/MyCommponent';
+import ListTodo from './Todos/ListTodo';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
@@ -9,15 +14,21 @@ function App() {
         <p>
           hello word tumochua
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* <MyCommponent /> */}
+        <ListTodo />
       </header>
+
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </div>
   );
 }
